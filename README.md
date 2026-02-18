@@ -30,7 +30,7 @@ Recruitment processes often involve manually filtering through thousands of resu
 ## 📈 Results
 The model was evaluated using a split of the dataset (80% training, 20% testing).
 * **Training Accuracy:** ~100%
-* **Test Accuracy:** ~99%
+* **Test Accuracy:** ~97%
 
 ## 🔮 Future Scope
 * Integration with a web application (Streamlit/Flask) for real-time file uploading.
