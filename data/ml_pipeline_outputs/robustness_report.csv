@@ -1,0 +1,7 @@
+attack,flip_rate,flips,total
+Keyword stuffing,1.0,667,667
+Random typos,0.08245877061469266,55,667
+Template header/footer,0.1889055472263868,126,667
+Synonym replacement,0.0014992503748125937,1,667
+Sentence shuffle,0.005997001499250375,4,667
+Adversarial insert,0.3373313343328336,225,667
