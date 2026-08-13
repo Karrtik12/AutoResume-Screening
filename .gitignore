@@ -17,12 +17,15 @@ venv.bak/
 .env
 .env.local
 
-# IDE & Editor files
+# IDE & OS generated files
 .vscode/
 .idea/
 *.swp
 *.swo
 .DS_Store
+**/.DS_Store
+._*
+Thumbs.db
 
 # Logs and temporary files
 *.log
