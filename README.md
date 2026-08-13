@@ -23,7 +23,6 @@ AutoResume-Screening/
 ├── main.ipynb                          # Interactive Jupyter Notebook importing from src/
 ├── requirements.txt                    # Pinned Python package dependencies
 ├── .gitignore                          # Excludes bytecode, venv/, cache, & OS files
-├── DATASETS.md                         # Reference guide for external open resume datasets
 ├── src/                                # Modular Python Package
 │   ├── __init__.py
 │   ├── config.py                       # Paths, constants, and hyperparameters
@@ -72,7 +71,7 @@ python main.py
 ```
 
 ### Option 2: Run via Interactive Notebook
-Launch Jupyter Notebook or VS Code to run [main.ipynb](file:///Users/kartikayechaturvedi/Dev/AutoResume-Screening/main.ipynb):
+Launch Jupyter Notebook or VS Code to run [main.ipynb](main.ipynb):
 ```bash
 jupyter notebook main.ipynb
 ```
@@ -92,6 +91,13 @@ jupyter notebook main.ipynb
 
 ---
 
-## 📑 Datasets
+## 📑 Dataset Details
 
-Detailed references to additional open-source resume datasets (Kaggle & Hugging Face) can be found in [DATASETS.md](file:///Users/kartikayechaturvedi/Dev/AutoResume-Screening/DATASETS.md).
+This project utilizes the **Resume Screening & Recruitment Audit Dataset** located at `data/resume_data.csv`.
+
+* **Dataset Scale:** **9,544 total candidate records** across **38 tabular & text attributes**.
+* **Target Label (`shortlist`):** Balanced binary classification label where `1` represents a shortlisted candidate and `0` represents non-shortlisted candidate (**4,923 shortlisted [51.6%]** vs **4,621 non-shortlisted [48.4%]**).
+* **Demographic Breakdown:** Includes **7,173 candidate records** with inferable demographic gender (**3,589 Female** vs **3,584 Male**) processed for demographic parity and equalized odds fairness auditing.
+* **Feature Schema:**
+  * **Candidate Profile:** `skills`, `years_of_experience`, `degree_names`, `major_field_of_studies`, `educational_institution_name`, `responsibilities`, `certification_skills`, `languages`.
+  * **Job Specs & Matching:** `job_position_name`, `skills_required`, `experiencere_requirement`, `educationaL_requirements`, `matched_score`.
